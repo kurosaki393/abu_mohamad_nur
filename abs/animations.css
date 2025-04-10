@@ -1,0 +1,66 @@
+:root {
+    --main-duration-short: 1s;
+    --main-duration-mid: 2s;
+    --main-duration-long: 6s;
+    --main-delay-short: .8s;
+    --main-delay-mid: 2s;
+
+}
+
+/* animations */
+@keyframes up-down {
+    0% {
+        transform: translateY(1000%);
+        opacity: 1;
+    }
+
+    50% {
+        /* transform: translateY(1px); */
+    }
+
+    100% {
+        /* transform: translateY(100%); */
+    }
+}
+
+@keyframes show-up {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes left-to-right {
+    100% {
+        transform: translateX(1000%);
+        opacity: 1;
+    }
+}
+
+/* end animations */
+.up-down-cl {
+    animation-name: up-down;
+    animation-duration: var(--main-duration-short);
+    /* animation-iteration-count: infinite; */
+    visibility: hidden;
+    visibility: visible;
+}
+
+.show-up-cl {
+    /* visibility: visible; */
+    animation-name: show-up;
+    animation-duration: var(--main-duration-mid);
+    animation-delay: var(--main-delay-short);
+}
+
+/* classes */
+
+/* end classes */
